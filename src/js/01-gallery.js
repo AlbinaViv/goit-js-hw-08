@@ -7,7 +7,6 @@ import { galleryItems } from './gallery-items';
 console.log(galleryItems);
 
 
-
 const ulEl = document.querySelector('.gallery');
 
 
@@ -24,8 +23,10 @@ function createGalleryMarkup(items) {
 
 ulEl.insertAdjacentHTML('beforeend', createGalleryMarkup(galleryItems));
 
+ulEl.style.listStyle = 'none';
 
-const lightbox = new SimpleLightbox('.gallery-items.js a', {
+
+const lightbox = new SimpleLightbox('.gallery__item a', {
     captionsData: "alt",
     captionDelay: 250,
 });
