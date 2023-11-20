@@ -27,6 +27,7 @@ refs.form.addEventListener("input", event => {
 
 });
 
+
 populateTextarea();
 
 function onFormSubmit(event) {
