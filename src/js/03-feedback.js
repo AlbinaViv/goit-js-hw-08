@@ -1,5 +1,5 @@
 import throttle from 'lodash.throttle';
-import '../css/common.css';
+
 const LS_KEY = "feedback-form-state";
 const refs = {
     form: document.querySelector(".feedback-form"),
