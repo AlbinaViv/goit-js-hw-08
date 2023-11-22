@@ -33,11 +33,12 @@ populateTextarea();
 function populateTextarea() {
     const savedTextarea = localStorage.getItem(LS_KEY);
     const savedInput = JSON.parse(savedTextarea);
+    console.log(savedInput);
+
     if (savedTextarea) {
         refs.input.value = savedInput.email;
         refs.textarea.value = savedInput.message;
     }
-    console.log(savedTextarea);
 }
 
 
