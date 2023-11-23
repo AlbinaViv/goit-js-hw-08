@@ -23,6 +23,8 @@ function onTaxteareaInput(event) {
 
 
 function onFormSubmit(event) {
+    console.log(formData);
+
     event.preventDefault();
     event.currentTarget.reset();
     localStorage.removeItem(LS_KEY);
@@ -33,7 +35,6 @@ populateTextarea();
 function populateTextarea() {
     const savedTextarea = localStorage.getItem(LS_KEY);
     const savedInput = JSON.parse(savedTextarea);
-    console.log(savedInput);
 
     if (savedTextarea) {
         refs.input.value = savedInput.email;
