@@ -11,7 +11,7 @@ const refs = {
 let formData = {};
 
 
-refs.form.addEventListener("submit", throttle(onFormSubmit, 500));
+refs.form.addEventListener("submit", onFormSubmit);
 refs.form.addEventListener("input", throttle(onTaxteareaInput, 500));
 
 function onTaxteareaInput(event) {
